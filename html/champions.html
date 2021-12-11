@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Champions</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" sizes="144x144" href="../favicon.ico">
+    <meta name="description" content="Ranking fighters in each weight class">
+    <meta name="keywords" content="">
+    <style>
+        h1{
+            font-size:18px;
+        }
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+      <a href="../index.html">Home</a>
+      <a class="active" href="champions.html">Champions</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </div>
+   <p> Choose Weight Class:</p>
+   <table>
+        <tr >
+            <td><button id="btn0" onclick='getChampions(0);'>Flyweight</button></td>
+            <td><button id="btn1" onclick='getChampions(1);'>Bantamweight</button></td>
+            <td><button id="btn2" onclick='getChampions(2);'>Featherweight</button></td>
+            <td><button id="btn3" onclick='getChampions(3);'>Lightweight</button></td>
+            <td><button id="btn4" onclick='getChampions(4);'>Welterweight</button></td>
+            <td><button id="btn5" onclick='getChampions(5);'>Middleweight</button></td>
+            <td><button id="btn6" onclick='getChampions(6);'>Light Heavyweight</button></td>
+            <td><button id="btn7" onclick='getChampions(7);'>Heavyweight</button></td>
+        </tr>
+    </table>
+    <div id="header0" class="show">
+        <h1> Current Champion: Brandon Moreno (19-5-2) </h1>
+        <img id="moreno" src="../images/moreno.jpg" alt="Moreno" title="Brandon Moreno">
+    </div>
+    <div id="header1" class="hide">
+        <h1> Current Champion: Aljamain Sterling (20-3) </h1>
+        <img id="sterling" src="../images/sterling.jpg" alt="Sterling" title="Aljamain Sterling">
+    </div>
+    <div id="header2" class="hide">
+        <h1> Current Champion: Alexander Volkanovski (23-1) </h1>
+        <img id="volkanovski" src="../images/volkanovski.jpg" alt="Volkanovski" title="Alexander Volkanovski">
+    </div>
+    <div id="header3" class="hide">
+        <h1> Current Champion: Charles Oliveira (31-8) </h1>
+        <img id="oliveira" src="../images/oliveira.jpg" alt="Oliveira" title="Charles Oliveira">
+       
+    </div>
+    <div id="header4" class="hide">
+        <h1 > Current Champion: Kamaru Usman (20-1) </h1>
+        <img id="usman" src="../images/usman.jpg" alt="Usman" title="Kamaru Usman">
+    </div>
+    <div id="header5" class="hide">
+        <h1 > Current Champion: Israel Adesanya (21-1) </h1>
+        <img id="adesanya" src="../images/adesanya.jpg" alt="Adesanya" title="Israel Adesanya">
+    </div>
+
+    <div id="header6" class="hide">
+        <h1 > Current Champion: Glover Teixeira (33-7) </h1>
+        <img id="teixeira" src="../images/teixeira.jpg" alt="Teixeira" title="Glover Teixeira">
+    </div>
+    <div id="header7" class="hide">
+        <h1 > Current Champion: Francis Ngannou (16-3) </h1>
+        <img id="ngannou" src="../images/ngannou.jpg" alt="Ngannou" title="Francis Ngannou">
+    </div>
+    <table id="table0" class="show">
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Record</th>
+        <th>Nickname</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Deiveson Figueiredo</td>
+        <td>20-2-1</td>
+        <td>"Deus Da Guerra"</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Askar Askarov</td>
+        <td>13-0-1</td>
+        <td>"Bullet"</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Alexandre Pantoja</td>
+        <td>24-5</td>
+        <td>"The Cannibal"</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Alex Perez</td>
+        <td>24-6</td>
+        <td>None</td>
+      </tr>
+    </table>
+    <table id="table1" class="hide">
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Record</th>
+        <th>Nickname</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Petr Yan</td>
+        <td>16-2</td>
+        <td>"No Mercy"</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>TJ Dillashaw</td>
+        <td>18-4</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Jose Aldo</td>
+        <td>31-7</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Cory Sandhagen</td>
+        <td>14-4</td>
+        <td>None</td>
+      </tr>
+    </table>
+    <table id="table2" class="hide">
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Record</th>
+        <th>Nickname</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Max Holloway</td>
+        <td>23-6</td>
+        <td>"Blessed"</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Brian Ortega</td>
+        <td>15-2</td>
+        <td>"T-City"</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Yair Rodriguez</td>
+        <td>14-3</td>
+        <td>"El Pantera"</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Chan Sung Jung</td>
+        <td>17-6</td>
+        <td>"The Korean Zombie"</td>
+      </tr>
+    </table>
+    <table id="table3" class="hide">
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Record</th>
+        <th>Nickname</th>
+      </tr>
+      <tr id="poirier">
+        <td>1</td>
+        <td>Dustin Poirier</td>
+        <td>28-6</td>
+        <td>"The Diamond"</td>
+      </tr>
+      <tr id="gaethje">
+        <td>2</td>
+        <td>Justin Gaethje</td>
+        <td>23-3</td>
+        <td>"The Highlight"</td>
+      </tr>
+      <tr id="dariush">
+        <td>3</td>
+        <td>Beneil Dariush</td>
+        <td>21-4</td>
+        <td>None</td>
+      </tr>
+      <tr id="makhachev">
+        <td>4</td>
+        <td>Islam Makhachev</td>
+        <td>21-1</td>
+        <td>None</td>
+      </tr>
+    </table>
+
+    <table id="table4" class="hide">
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Record</th>
+        <th>Nickname</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Colby Covington</td>
+        <td>16-3</td>
+        <td>"Chaos"</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Gilbert Burns</td>
+        <td>20-4</td>
+        <td>"Durinho"</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Leon Edwards</td>
+        <td>19-3</td>
+        <td>"Rocky"</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Vicente Luque</td>
+        <td>21-7-1</td>
+        <td>"The Silent Assasin"</td>
+      </tr>
+    </table>
+
+    <table id="table5" class="hide">
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Record</th>
+        <th>Nickname</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Robert Whittaker</td>
+        <td>24-5</td>
+        <td>"The Reaper"</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Marvin Vettori</td>
+        <td>18-5-1</td>
+        <td>"The Italian Dream"</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Jared Cannonier</td>
+        <td>14-5</td>
+        <td>"The Killa Gorilla"</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Derek Brunson</td>
+        <td>23-7</td>
+        <td>None</td>
+      </tr>
+    </table>
+    <table id="table6" class="hide">
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Record</th>
+        <th>Nickname</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Jan Blachowicz</td>
+        <td>28-9</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jiri Prochazka</td>
+        <td>28-3-1</td>
+        <td>"Denisa"</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Aleksandar Rakic</td>
+        <td>14-2</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Anthony Smith</td>
+        <td>36-16</td>
+        <td>"Lionheart"</td>
+      </tr>
+    </table>
+    <table id="table7" class="hide">
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Record</th>
+        <th>Nickname</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Ciryl Gane</td>
+        <td>10-0</td>
+        <td>"Bon Gamin"</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Stipe Miocic</td>
+        <td>20-4</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Derrick Lewis</td>
+        <td>25-8</td>
+        <td>"The Black Beast"</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Curtis Blayes</td>
+        <td>15-3</td>
+        <td>"Razor"</td>
+      </tr>
+    </table>
+    <script type="text/javascript" src="../index.js"></script>
+
+</body>
+</html>

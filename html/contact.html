@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Feedback</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" sizes="144x144" href="../favicon.ico">
+    <meta name="keywords" content="">
+    <style>
+        form{
+             width: 50%;
+             margin: 0 auto;
+        }
+
+        button{
+	         font-size: 12px;
+	         font-family: Arial;
+             color:black;
+        }
+        p{
+            color:white;
+            font-family:Arial;
+            font-size: 10px;
+        }
+        input{
+            margin-bottom:5px;
+            
+        }
+        textarea{
+            font-family:Arial;
+            width: 170px;
+        }
+    </style>
+</head>
+<body>
+   <div class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="champions.html">Champions</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+   </div>
+   <h1> Feedback </h1>
+   <form class="form">
+        <div>
+            <input type="email" placeholder="Enter your email"></input>
+        </div>
+        <div>
+            <textarea placeholder="Share your feedback" maxlength="100" onkeyup="countChar(this)"></textarea>
+            <p id="charNum">100 characters remaining</p>
+        </div>
+        <div>
+            <button> Submit </>
+        </div>
+  </form>
+  <p> For any questions email me at: kgautam1@babson.edu</p>
+  <script type="text/javascript" src="../index.js"></script>
+
+</body>
+</html>

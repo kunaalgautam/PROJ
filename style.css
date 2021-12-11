@@ -1,0 +1,114 @@
+body{
+    background-color: black;
+    margin: 0px;
+    text-align:center;
+
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-family: Arial;
+}
+div {
+      text-color:white;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #E50101;
+
+}
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    padding: 12px 17px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    font-family: Arial;
+}
+
+.navbar a:hover {
+    color: black;
+    background-color: white;
+}
+
+.navbar a.active {
+    color: black;
+    background-color: white;
+}
+p{
+    color:white;
+    font-family:Arial;
+}
+table{
+    border: none;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+table button{
+    float: left;
+    color: #f2f2f2;
+    padding: 12px 17px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    font-family: Arial;
+    background:transparent;
+}
+table button:hover {
+    color: black;
+    background-color: white;
+
+}
+table button.active{
+    display:block;
+    text-decoration:none;
+    color:black;
+    background-color:white
+}
+td{
+    color:white;
+    overflow: hidden;
+    text-align:left;
+    height: 50px;
+    vertical-align: bottom;
+    font-family:Arial;
+
+}
+th{
+    color:white;
+    overflow: hidden;
+    text-align:left;
+    height: 50px;
+    vertical-align: bottom;
+    width: 135px;
+    font-family:Arial;
+}
+.hide{
+    display:none;
+}
+#btn0{
+    color:black;
+    background-color:white;
+}
+#btn0, #btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7{
+    cursor:pointer;
+    border: 2px solid white;
+    margin-right:5px;
+    
+}
+
+img{
+    width:388px;
+    height:208px;
+}
+
+#home-logo{
+    width:388px;
+    height:208px;
+}
+
+
